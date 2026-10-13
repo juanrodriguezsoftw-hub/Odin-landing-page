@@ -2,6 +2,8 @@ body {
     display: flex;
     margin: 0;
     flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
 }
 
 .header {
@@ -15,13 +17,17 @@ body {
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: 900;
+    margin-left: 100px;
+    margin-top: 25px;
 }
 
 ul {
+    margin-top: 25px;
+    margin-right: 220px;
     list-style-type: none;
     gap: 15px;
     display: flex;
-    padding-right: 10px;
 }
 
 a {
@@ -32,17 +38,31 @@ a {
 .content {
     background: #1f2937;
     padding-bottom: 70px;
+    display: flex;
+    gap: 40px;
+}
+
+.content-text {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-left: 100px;
 }
 
 h2 {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
+    margin-bottom: 0;
 }
 
 p {
     font-size: 18px;
     color: #e5e7eb;
+    margin-top: 0;
+    margin-bottom: 2px;
 }
 
 .button {
@@ -52,18 +72,13 @@ p {
     padding: 8px;
     border-color: #3882F6;
     color: #F9FAF8;
+    margin-top: 0;
 }
 
 img {
     width: 400px;
     display: flex;
-}
-
-.content1 {
-    margin-top: 25px;
-    margin-bottom: 200px;
-    display: flex;
-    gap: 0;
+    border-radius: 10px;
 }
 
 .title {
@@ -74,6 +89,20 @@ img {
     color: #1f2937;
 }
 
+.content1 {
+    margin-top: 75px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 52px;
+    flex: 1;
+}
+
+.image1 img {
+    width: 250px;
+}
+
 .quote {
     margin-top: 25px;
     background: #E5E7EB;
@@ -82,16 +111,50 @@ img {
     font-weight: 300;
     font-style: italic;
     padding: 100px;
+    text-align: center;
 }
 
 .content2 {
-    width: 450px;
+    width: 800px;
     background: #3882F6;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 100px;
+    padding: 40px 80px;
+    display: flex;
+    align-self: center;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.button1 {
+    background: #3882F6;
+    border-color: black;
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+
+.text1 {
+    color: #E5E7EB;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.text2 {
+    color: black;
+    margin-top: 0px;
+    font-size: medium;
 }
 
 .footer {
     background: #1f2937;
-    padding: 50px;
+    padding: 30px;
+    text-align: center;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
 }
